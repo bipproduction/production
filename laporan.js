@@ -1,14 +1,12 @@
 document.onreadystatechange = () => {
-    
+
     console.log("apa", window.location.origin)
     console.log("ini", localStorage.getItem("user"))
 
-    if (!localStorage.getItem("user")) {
+    if (localStorage.getItem("user") == null) {
         window.location.href = "https://bipproduction.github.io/production";
         return
     }
-
-    console.log(localStorage.getItem("user"));
 
     const eagleEye = `
     gantt
