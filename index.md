@@ -39,7 +39,7 @@ gantt
     dateFormat  YYYY-MM-DD
     section bagas
         membuat wireframe sesuai dengan data yang diberikan client              :active, a1, 2022-12-21, 2d
-        review                                                                  :   a2, after a1, 1d
+        review                                                                  : a2, after a1, 1d
         implementasi hasil review                                               : a2, after a1, 2d
         peranacangan flow chart                                                 : a3, after a2, 2d
         perancangan / perapian wireframe menyesuaikan flow chart                : a4, after a3, 2d
@@ -69,7 +69,7 @@ gantt
         pembuatan profile user                                                  : a7, after a6, 1d
         implementasi drag and drop                                              : a8, after a7, 4d
     section     bagas
-        perbantuan membuat flow chart               :done, a1, 2022-12-18,2d
+        perbantuan membuat flow chart                                           :done, a1, 2022-12-18,2d
 ```
 
 ## Project Web BIP Reborn
