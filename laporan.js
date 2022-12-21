@@ -3,8 +3,8 @@ document.onreadystatechange = () => {
     console.log("apa", window.location.origin)
 
     if (localStorage.getItem("user") == "null") {
-        console.log("disini")
-        window.location.href = "https://bipproduction.github.io/production";
+        const host = window.location.origin
+        window.location.href = host.includes('127') ? "/" : "https://bipproduction.github.io/production";
         return
     }
 
@@ -76,6 +76,7 @@ document.onreadystatechange = () => {
 
     document.getElementById("keluar").onclick = () => {
         localStorage.setItem("user", null);
-        window.location.href = "https://bipproduction.github.io/production";
+        const host = window.location.origin
+        window.location.href = host.includes('127') ? "/" : "https://bipproduction.github.io/production";
     }
 }
