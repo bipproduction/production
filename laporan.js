@@ -1,7 +1,11 @@
 document.onreadystatechange = () => {
+    
+    console.log("apa", window.location.origin)
+    console.log("ini", localStorage.getItem("user"))
 
     if (!localStorage.getItem("user")) {
         window.location.href = "https://bipproduction.github.io/production";
+        return
     }
 
     console.log(localStorage.getItem("user"));
@@ -74,6 +78,6 @@ document.onreadystatechange = () => {
 
     document.getElementById("keluar").onclick = () => {
         localStorage.setItem("user", null);
-        window.location.href = "/";
+        window.location.href = "https://bipproduction.github.io/production";
     }
 }
