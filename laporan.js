@@ -1,7 +1,6 @@
 document.onreadystatechange = () => {
 
     console.log("apa", window.location.origin)
-    console.log("ini", localStorage.getItem("user"))
 
     if (!localStorage.getItem("user")) {
         console.log("disini")
