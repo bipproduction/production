@@ -12,6 +12,7 @@ document.onreadystatechange = () => {
         dateFormat  YYYY-MM-DD
         excludes    saturday, sunday
         section     Malik
+            analisa                 : active, a1, 2022-12-21,1d
         `
     const grp = `
     gantt
