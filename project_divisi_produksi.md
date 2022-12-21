@@ -74,3 +74,29 @@ gantt
     membuat halaman pendafataran dan login  :             a2, after a1, 1d
 
 ```
+
+> # 2022-12-12
+
+```mermaid
+gantt 
+    title GRP
+    section bagas
+    memperbaiki / merapikan tampilan wireframe  : active , a1, 2022-12-12, 1d
+```
+
+```mermaid
+gantt
+    title NOC
+    section malik
+    setup noc   : active , a1, 2022-12-12, 1d
+```
+
+```mermaid
+gantt
+    title MUKU
+    section alit
+    membuat tampilan pilihan setup setelah sigup            : active, a1, 2022-12-12, 2d
+    membuat tabel database untuk menampung setup            : active, a2, 2022-12-12, 2d
+    menambahkan keterangan / info setelah berhasil login    : active, a3, 2022-12-12, 2d
+
+```
