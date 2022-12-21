@@ -2,7 +2,7 @@ document.onreadystatechange = () => {
 
     console.log("apa", window.location.origin)
 
-    if (!localStorage.getItem("user")) {
+    if (localStorage.getItem("user") == "null") {
         console.log("disini")
         window.location.href = "https://bipproduction.github.io/production";
         return
