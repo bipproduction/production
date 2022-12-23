@@ -1,0 +1,191 @@
+// project Prabowo 
+// summary
+
+# @name login
+GET https://app.brand24.com/api-rest/v1/b24token HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+accept-language: id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7
+cookie: b24er=%2BKv1NDXMZGGfOcpG2oXuvVzI244viio3umFxo68UAIvJrZhxUCoJKclGTFN3bpvV45yUuS6enGJLM4vTMhl9Vg%3D%3D; b24el=hwTMBFrc1wRkjBSxSZyqCQi5augNp%2FcknN8L%2FNyBteyZPKXcAx4AO4e0M67A%2BdBPTaXs5GpOyMHuxsVY1HByuxQkoy1%2FD4oNnF2N2LrGLUg%3D; _gcl_au=1.1.267244021.1671613960; kemrcaw=bdae4f4bb0e304b2805d736753b02b0f%25573319852; hpkemrcaw=573319852.297787670.1; _ga=GA1.3.997477616.1671614007; _gid=GA1.3.223732671.1671614007; _gid=GA1.2.223732671.1671614007; _fbp=fb.1.1671614008453.1431495334; _hjSessionUser_158833=eyJpZCI6IjMwNzhmNGNjLWMzZTAtNThmMC04ZWM0LTE0OTU1OGNhOGVkYiIsImNyZWF0ZWQiOjE2NzE2MTQwMDc3NTQsImV4aXN0aW5nIjp0cnVlfQ==; intercom-device-id-7d95c7a1f40e65f71000a61e8f048680ca2bd6f2=a7a5568f-6e40-49c1-a1eb-afbca54fe1bd; hiddenChangelog=1; unlockTwitterDialogShown297787670=1; projectHasJustAdded962085146=1; projectHasJustAdded962092104=1; OptanonAlertBoxClosed=2022-12-22T03:51:58.642Z; projectHasJustAdded962519524=1; mobileVersion-573319852=1; _hjSessionUser_1039750=eyJpZCI6Ijk2YjIzYzM5LWRlZmMtNWIwZS1hZjE4LWQ0OWEzZDYxNGM5OCIsImNyZWF0ZWQiOjE2NzE2ODk4NTkyNzEsImV4aXN0aW5nIjp0cnVlfQ==; projectHasJustAdded962595068=1; projectHasJustAdded962597553=1; projectHasJustAdded962600038=1; gtm-last-project-added=962601032; OptanonConsent=isGpcEnabled=0&datestamp=Thu+Dec+22+2022+16%3A53%3A38+GMT%2B0800+(Central+Indonesia+Time)&version=6.35.0&isIABGlobal=false&hosts=&consentId=848aa7aa-18d9-463f-bc01-630664bb757c&interactionCount=1&landingPath=NotLandingPage&groups=C0002%3A1%2CC0003%3A1%2CC0004%3A1%2CC0001%3A1&geolocation=ID%3B&AwaitingReconsent=false; b24el_today=7oAuPftaaFTQIqqwG1C92%2FL1bYzmQxRkIpYTKdtQRDq8LjIeP9B6awQcMX0ACujLzx%2FQyDciv%2BVCGFp72P%2FTz%2BCUqYk70bgPhVg0uMFUiqpcerBbVQvjUF%2FIbWN2YumA; _hp2_props.2979368351=%7B%22account_id%22%3A%22297787670%22%7D; _hp2_ses_props.2979368351=%7B%22r%22%3A%22https%3A%2F%2Fapp.brand24.com%2Fpanel%2Fsources%2F%3Fsid%3D962547853%22%2C%22ts%22%3A1671722818355%2C%22d%22%3A%22app.brand24.com%22%2C%22h%22%3A%22%2Fpanel%2Finfluencers%2F%22%2C%22q%22%3A%22%3Fsid%3D962547853%22%2C%22g%22%3A%22%23d1%3D2022-11-22%26d2%3D2022-12-22%26dr%3D4%26va%3D1%26cdt%3Ddays%22%7D; PHPSESSID=4616b3487f89a54d5d077446d9f8baba; gtm-user-login-submit=1; _uetsid=baf19aa0810f11ed9fe8bb25a800f156; _uetvid=baf1a210810f11edb984e32b3005a000; _dc_gtm_UA-109906-9=1; _ga=GA1.1.997477616.1671614007; _hp2_id.2979368351=%7B%22userId%22%3A%224630021298158100%22%2C%22pageviewId%22%3A%226037789745201633%22%2C%22sessionId%22%3A%22966212161800240%22%2C%22identity%22%3A%22malikkurosakisatu%40gmail.com%22%2C%22trackerVersion%22%3A%224.0%22%2C%22identityField%22%3Anull%2C%22isIdentified%22%3A1%7D; _hjIncludedInSessionSample=0; _hjSession_158833=eyJpZCI6Ijc3ZDk2ZTdiLTExMzMtNGYyZi1iZGMxLWRiOTBhNGI1YzhmMyIsImNyZWF0ZWQiOjE2NzE3MjI4MjIzNzIsImluU2FtcGxlIjpmYWxzZX0=; _hjAbsoluteSessionInProgress=0; intercom-session-7d95c7a1f40e65f71000a61e8f048680ca2bd6f2=TERpdTB0VStvdGxWUlNYSkpNbk9HUkZnQlNlOTdHOWNZTkR0OE9IUXY0SjBJN3BaWkhwK3RKUWo2NkNkTFFsVS0tVHpvalNoNlJMSXhRK3pPdVp3V2xQUT09--169e9e5f1a722a6a5cb8a9e6152c54412dc6454c; _ga_73Z0NEGTVL=GS1.1.1671722820.8.1.1671722830.0.0.0
+referer: https://app.brand24.com/panel/results/?sid=962547853
+sec-ch-ua: "Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+
+@token = {{login.response.body.token}}
+
+# @name id
+GET https://app.brand24.com/api/graphql
+tknb24: {{token}}
+Accept: application/json
+X-REQUEST-TYPE: GraphQL
+
+{
+    "operationName": "getMe",
+    "variables": {},
+    "query": "query getMe {\n  getMe {\n    loggedUser {\n      id\n      email\n      loginCount\n      registerDate\n      loginCount\n      phoneNumber\n      firstName\n      lastEmailInteractionDate\n      settings {\n        mentionsPerPageLimit\n        mentionsChartSize\n      }\n    }\n    loggedAccount {\n      id\n      name\n      daysLeftInTrial\n      type\n      paymentsEnvironment\n      isPostpaid\n      registrationSource\n      createdDate\n      upgradeAccountType\n      latestSelectedPlan\n      kind\n      pricingVersion\n      creationSource\n      validToDate\n      billingPeriod\n      isAutomaticPaymentEnabled\n      promoCode\n      status\n      firstPaymentDate\n      isPaymentPastDue\n      partnerStackCustomerKey\n      firstProjectMonitoringGoal\n      firstTimeVisitLanding\n      firstTimeVisitReferer\n      lastStatusChangeDate\n      clientCategory\n      payingSuspended\n      limits {\n        phrases {\n          used\n          limit\n        }\n        users {\n          used\n          limit\n        }\n        mentions {\n          used\n          limit\n        }\n      }\n      sourceIntegrations {\n        twitter {\n          status\n        }\n        facebook {\n          status\n        }\n      }\n    }\n    loggedUserAccount {\n      icHash\n      role\n      reactivationStatus\n      pdfDownloadToken\n      actions {\n        id\n        value\n      }\n    }\n    accounts {\n      id\n      name\n    }\n    isAdminLoggedAsUser\n    intercomAppId\n    gtmContainerId\n    blackFridayStatus\n  }\n}\n"
+}
+
+### Project
+GET https://app.brand24.com/api-rest/v1/projects/962547853 HTTP/1.1
+tknb24: {{token}}
+
+### Mention
+GET https://app.brand24.com/api-rest/v1/projects/962547853/mentions?date_from=2022-11-22&date_to=2022-12-22&order=interactive_mentions&limit=5&mention_title_length=35 HTTP/1.1
+tknb24: {{token}}
+
+### Mention v2
+GET https://app.brand24.com/api-rest/v1/projects/962547853/mentions?date_from=2022-11-22&date_to=2022-12-22&order=recent_mentions&limit=5&mention_title_length=35 HTTP/1.1
+tknb24: {{token}}
+
+### Summary
+GET https://app.brand24.com/api-rest/v1/projects/962547853/summary?date_from=2022-11-22&date_to=2022-12-22&period=days&fields=%7B%22include%22:[%22total_results%22,%22social_media_reach%22,%22social_media_interactions%22,%22positive_results%22,%22negative_results%22]%7D&graph_data=0 HTTP/1.1
+tknb24: {{token}}
+
+### Summary 2
+GET https://app.brand24.com/api-rest/v1/projects/962547853/summary?date_from=2022-11-22&date_to=2022-12-22&period=days&fields=%7B%22include%22:[%22total_results%22,%22social_media_reach%22]%7D&graph_data=1
+tknb24: {{token}}
+
+### Summary 3
+GET https://app.brand24.com/api-rest/v1/projects/962547853/summary?date_from=2022-11-22&date_to=2022-12-22&period=days&fields={"include":["results_beyond_social_media","social_media_results","video_results","social_media_shares","social_media_likes"]}&graph_data=1
+tknb24: {{token}}
+
+### Summary 4
+GET https://app.brand24.com/api-rest/v1/projects/962547853/summary?date_from=2022-12-21&date_to=2022-12-21&period=days&fields={"include":["total_results","social_media_reach","social_media_interactions","positive_results","negative_results"]}&graph_data=0
+tknb24: {{token}}
+
+### Summary 5
+GET https://app.brand24.com/api-rest/v1/projects/962547853/summary?date_from=2022-12-21&date_to=2022-12-21&period=days&fields={"include":["total_results","social_media_reach"]}&graph_data=1
+tknb24: {{token}}
+
+
+### Author
+GET https://app.brand24.com/api-rest/v1/projects/962547853/authors?date_from=2022-11-22&date_to=2022-12-22&limit=5
+tknb24: {{token}}
+
+### Sites
+GET https://app.brand24.com/api-rest/v1/projects/962547853/sites?date_from=2022-11-22&date_to=2022-12-22&limit=5
+tknb24: {{token}}
+
+### Sources
+GET https://app.brand24.com/api-rest/v1/projects/962547853/sources?date_from=2022-11-22&date_to=2022-12-22
+tknb24: {{token}}
+
+### Sources 2
+GET https://app.brand24.com/api-rest/v1/projects/962547853/sources?date_from=2022-10-22&date_to=2022-11-21
+tknb24: {{token}}
+
+### Summary 6
+GET https://app.brand24.com/api-rest/v1/projects/962547853/summary?period=days&fields={"include":["results_beyond_social_media","social_media_results","video_results","social_media_shares","social_media_likes"]}&graph_data=0&date_from=2022-12-21&date_to=2022-12-21
+tknb24: {{token}}
+
+### Summary 7
+GET https://app.brand24.com/api-rest/v1/projects/962547853/sources?date_from=2022-12-21&date_to=2022-12-21
+tknb24: {{token}}
+
+### Summary 8
+GET https://app.brand24.com/api-rest/v1/projects/962547853/summary?date_from=2022-10-22&date_to=2022-11-21&period=days&fields={"include":["total_results","social_media_reach","social_media_interactions","positive_results","negative_results"]}&graph_data=0
+tknb24: {{token}}
+
+### Summary 9
+GET https://app.brand24.com/api-rest/v1/projects/962547853/summary?date_from=2022-10-22&date_to=2022-11-21&period=days&fields={"include":["total_results","social_media_reach"]}&graph_data=1
+tknb24: {{token}}
+
+### Summary 10
+GET https://app.brand24.com/api-rest/v1/projects/962547853/summary?period=days&fields={"include":["results_beyond_social_media","social_media_results","video_results","social_media_shares","social_media_likes"]}&graph_data=0&date_from=2022-10-22&date_to=2022-11-21
+tknb24: {{token}}
+
+### Summary 10
+GET https://api.appcues.net/v1/accounts/23381/users/573319852.297787670/content/0777c6c8-4bc8-48bd-90b4-dc97845d348f
+tknb24: {{token}}
+
+// Analysis
+
+### Analysis 1
+GET https://app.brand24.com/panel/load-most-interactive-entries-from-social-media/sid/962547853
+tknb24: {{token}}
+
+### Analysis 2
+GET https://app.brand24.com/panel/load-entries-from-most-popular-authors/sid/962547853
+tknb24: {{token}}
+
+### Analysis 3
+GET https://app.brand24.com/panel/load-statistics/sid/962547853
+tknb24: {{token}}
+
+### Analysis 4
+GET https://app.brand24.com/api-rest/v1/projects/962547853/awareness/?date_from=2022-11-22&date_to=2022-12-22&period=days
+tknb24: {{token}}
+
+### Analysis 5
+GET https://app.brand24.com/panel/load-chart-sources/sid/962547853
+tknb24: {{token}}
+
+### Analysis 6
+GET https://app.brand24.com/panel/hashtags-analytics/sid/962547853
+tknb24: {{token}}
+
+### Analysis 7
+GET https://app.brand24.com/panel/links-analytics/sid/962547853
+tknb24: {{token}}
+
+### Analysis 8
+GET https://app.brand24.com/panel/load-most-important-authors/sid/962547853
+tknb24: {{token}}
+
+### Analysis 9
+GET https://app.brand24.com/panel/load-most-active-authors/sid/962547853
+tknb24: {{token}}
+
+### Analysis 10
+GET https://app.brand24.com/panel/load-most-active-urls/sid/962547853
+tknb24: {{token}}
+
+### Analysis 11
+GET https://app.brand24.com/panel/load-most-important-urls/sid/962547853
+tknb24: {{token}}
+
+### Analysis 12
+GET https://app.brand24.com/panel/get-most-popular-words/sid/962547853/tab/analysis
+tknb24: {{token}}
+
+
+// sources
+
+### source
+POST https://app.brand24.com/panel/load-source-sites/sid/962547853
+tknb24: {{token}}
+
+// influencer
+
+### influencer
+POST https://app.brand24.com/panel/load-source-authors/sid/962547853?d1=2022-11-22&d2=2022-12-22&dr=4&va=1&cdt=days&p=1
+tknb24: {{token}}
+Accept: application/json
+
+
+// Mention
+
+### Mention
+GET https://app.brand24.com/panel/load-source-authors/sid/962547853?d1=2022-11-22&d2=2022-12-22&dr=4&va=1&cdt=days&p=1
+tknb24: {{token}}
+Accept: application/json
+X-REQUEST-TYPE: GraphQL
+
+{
+    "operationName": "getMe",
+    "variables": {},
+    "query": "query getMe {\n  getMe {\n    loggedUser {\n      id\n      email\n      loginCount\n      registerDate\n      loginCount\n      phoneNumber\n      firstName\n      lastEmailInteractionDate\n      settings {\n        mentionsPerPageLimit\n        mentionsChartSize\n      }\n    }\n    loggedAccount {\n      id\n      name\n      daysLeftInTrial\n      type\n      paymentsEnvironment\n      isPostpaid\n      registrationSource\n      createdDate\n      upgradeAccountType\n      latestSelectedPlan\n      kind\n      pricingVersion\n      creationSource\n      validToDate\n      billingPeriod\n      isAutomaticPaymentEnabled\n      promoCode\n      status\n      firstPaymentDate\n      isPaymentPastDue\n      partnerStackCustomerKey\n      firstProjectMonitoringGoal\n      firstTimeVisitLanding\n      firstTimeVisitReferer\n      lastStatusChangeDate\n      clientCategory\n      payingSuspended\n      limits {\n        phrases {\n          used\n          limit\n        }\n        users {\n          used\n          limit\n        }\n        mentions {\n          used\n          limit\n        }\n      }\n      sourceIntegrations {\n        twitter {\n          status\n        }\n        facebook {\n          status\n        }\n      }\n    }\n    loggedUserAccount {\n      icHash\n      role\n      reactivationStatus\n      pdfDownloadToken\n      actions {\n        id\n        value\n      }\n    }\n    accounts {\n      id\n      name\n    }\n    isAdminLoggedAsUser\n    intercomAppId\n    gtmContainerId\n    blackFridayStatus\n  }\n}\n"
+}
+
+
+
+
+
+
+
+

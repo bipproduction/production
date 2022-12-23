@@ -1,0 +1,43 @@
+@baseUrl = https://example.com/api
+
+# @name login
+POST {{baseUrl}}/api/login HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+name=foo&password=bar
+
+###
+
+@authToken = {{login.response.headers.X-AuthToken}}
+
+# @name createComment
+POST {{baseUrl}}/comments HTTP/1.1
+Authorization: {{authToken}}
+Content-Type: application/json
+
+{
+    "content": "fake content"
+}
+
+###
+
+@commentId = {{createComment.response.body.$.id}}
+
+# @name getCreatedComment
+GET {{baseUrl}}/comments/{{commentId}} HTTP/1.1
+Authorization: {{authToken}}
+
+###
+
+# @name getReplies
+GET {{baseUrl}}/comments/{{commentId}}/replies HTTP/1.1
+Accept: application/xml
+
+###
+
+# @name getFirstReply
+GET {{baseUrl}}/comments/{{commentId}}/replies/{{getReplies.response.body.//reply[1]/@id}}
+
+
+
+b24er=+Kv1NDXMZGGfOcpG2oXuvVzI244viio3umFxo68UAIvJrZhxUCoJKclGTFN3bpvV45yUuS6enGJLM4vTMhl9Vg==; b24el=hwTMBFrc1wRkjBSxSZyqCQi5augNp/cknN8L/NyBteyZPKXcAx4AO4e0M67A+dBPTaXs5GpOyMHuxsVY1HByuxQkoy1/D4oNnF2N2LrGLUg=; _gcl_au=1.1.267244021.1671613960; kemrcaw=bdae4f4bb0e304b2805d736753b02b0f%573319852; hpkemrcaw=573319852.297787670.1; _ga=GA1.3.997477616.1671614007; _gid=GA1.3.223732671.1671614007; _gid=GA1.2.223732671.1671614007; _fbp=fb.1.1671614008453.1431495334; _hjSessionUser_158833=eyJpZCI6IjMwNzhmNGNjLWMzZTAtNThmMC04ZWM0LTE0OTU1OGNhOGVkYiIsImNyZWF0ZWQiOjE2NzE2MTQwMDc3NTQsImV4aXN0aW5nIjp0cnVlfQ==; intercom-device-id-7d95c7a1f40e65f71000a61e8f048680ca2bd6f2=a7a5568f-6e40-49c1-a1eb-afbca54fe1bd; hiddenChangelog=1; unlockTwitterDialogShown297787670=1; projectHasJustAdded962085146=1; projectHasJustAdded962092104=1; OptanonAlertBoxClosed=2022-12-22T03:51:58.642Z; projectHasJustAdded962519524=1; mobileVersion-573319852=1; _hjSessionUser_1039750=eyJpZCI6Ijk2YjIzYzM5LWRlZmMtNWIwZS1hZjE4LWQ0OWEzZDYxNGM5OCIsImNyZWF0ZWQiOjE2NzE2ODk4NTkyNzEsImV4aXN0aW5nIjp0cnVlfQ==; projectHasJustAdded962595068=1; projectHasJustAdded962597553=1; projectHasJustAdded962600038=1; gtm-last-project-added=962601032; OptanonConsent=isGpcEnabled=0&datestamp=Thu+Dec+22+2022+16:53:38+GMT+0800+(Central+Indonesia+Time)&version=6.35.0&isIABGlobal=false&hosts=&consentId=848aa7aa-18d9-463f-bc01-630664bb757c&interactionCount=1&landingPath=NotLandingPage&groups=C0002:1,C0003:1,C0004:1,C0001:1&geolocation=ID;&AwaitingReconsent=false; b24el_today=7oAuPftaaFTQIqqwG1C92/L1bYzmQxRkIpYTKdtQRDq8LjIeP9B6awQcMX0ACujLzx/QyDciv+VCGFp72P/Tz+CUqYk70bgPhVg0uMFUiqpcerBbVQvjUF/IbWN2YumA; _hp2_ses_props.2979368351={"r":"https://app.brand24.com/panel/sources/?sid=962547853","ts":1671722818355,"d":"app.brand24.com","h":"/panel/influencers/","q":"?sid=962547853","g":"#d1=2022-11-22&d2=2022-12-22&dr=4&va=1&cdt=days"}; PHPSESSID=4616b3487f89a54d5d077446d9f8baba; _hjSession_158833=eyJpZCI6Ijc3ZDk2ZTdiLTExMzMtNGYyZi1iZGMxLWRiOTBhNGI1YzhmMyIsImNyZWF0ZWQiOjE2NzE3MjI4MjIzNzIsImluU2FtcGxlIjpmYWxzZX0=; _hjIncludedInPageviewSample=1; _hjIncludedInSessionSample=0; _hjAbsoluteSessionInProgress=0; _uetsid=baf19aa0810f11ed9fe8bb25a800f156; _uetvid=baf1a210810f11edb984e32b3005a000; _hp2_props.2979368351={"account_id":"297787670"}; _ga=GA1.2.997477616.1671614007; _dc_gtm_UA-109906-9=1; _hp2_id.2979368351={"userId":"4630021298158100","pageviewId":"1344629646900742","sessionId":"966212161800240","identity":"malikkurosakisatu@gmail.com","trackerVersion":"4.0","identityField":null,"isIdentified":1}; intercom-session-7d95c7a1f40e65f71000a61e8f048680ca2bd6f2=SXZSTm1OZWE3VU56MkRabFNSbzNsakdLMWNMcDNPZXJQQ2ZMZXhZZFJrU1B0Q0kxMFpxTVp0b1h5MTNZQ3Bzbi0tSjRZMG5UWHN4eHIxcGtnaDFDa3pJdz09--94d270f924843006000bbac5875e03c5b63dc892; _ga_73Z0NEGTVL=GS1.1.1671722820.8.1.1671725404.0.0.0
